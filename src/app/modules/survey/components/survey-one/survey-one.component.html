@@ -1,0 +1,33 @@
+
+<app-header (click)="prev()" routerDirection="backward"></app-header>
+<ion-content *ngIf="currentSurveyAttr">
+  <ion-grid>
+    <ion-row>
+      <ion-col text-center>
+        <app-logo [path]="currentSurveyAttr.logo"></app-logo>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col text-center>
+        <app-progress-bar [value]="value"></app-progress-bar>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col text-center>
+        <h4 [innerHTML]="currentSurveyAttr.headline"></h4>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <button type="button" class="col-5 btn-continue float-right" (click)="updateSurveyInfo(person.Student)">
+          Student
+        </button>
+        <button type="button" class="col-5 btn-continue float-left" (click)="updateSurveyInfo(person.Parent)">
+          Parent
+        </button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

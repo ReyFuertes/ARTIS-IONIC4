@@ -1,0 +1,45 @@
+<app-header (click)="prev()" routerDirection="backward"></app-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col text-center>
+        <app-logo
+          [path]="currentSurveyAttr.logo"
+        ></app-logo>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col text-center>
+        <app-progress-bar [value]="value"></app-progress-bar>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col text-center>
+        <h4 [innerHTML]="currentSurveyAttr.headline"></h4>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col text-center>
+        <button type="button" class="btn-continue" (click)="updateSurveyInfo(syOption[0])">
+          {{syOption[0]}}
+        </button>
+        <button type="button" class="btn-continue" (click)="updateSurveyInfo(syOption[1])">
+            {{syOption[1]}}
+        </button>
+        <button type="button" class="btn-continue" (click)="updateSurveyInfo(syOption[2])">
+            {{syOption[2]}}
+        </button>
+        <button type="button" class="btn-continue" (click)="updateSurveyInfo(syOption[3])">
+            {{syOption[3]}}
+        </button>
+        <button type="button" class="btn-continue" (click)="updateSurveyInfo(syOption[4])">
+            {{syOption[4]}}
+        </button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

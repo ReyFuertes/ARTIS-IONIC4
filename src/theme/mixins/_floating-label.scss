@@ -1,0 +1,82 @@
+
+
+@mixin transition {
+  transition: 0.3s ease all;
+  -moz-transition: 0.3s ease all;
+  -webkit-transition: 0.3s ease all;
+}
+
+@mixin floating-label {
+  position: relative;
+  margin-bottom: 25px;
+  margin-top: 10px;
+
+  input {
+    font-size: 15px;
+    padding: 0;
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #CCC;
+    margin: 0 auto;
+    color: $color-standard;
+    font-weight: normal;
+    padding: 10px 23px 5px 0;
+  }
+  
+  input:focus {
+    outline: none;
+  }
+
+  label {
+    @include transition;
+
+    color: $color-standard;
+    font-size: 15px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 0;
+    top: 10px;
+    
+  }
+
+  input:focus ~ label,
+  input:valid ~ label,
+  input.ng-dirty ~ label {
+    top: -10px;
+    font-size: 12px;
+    color: $color-gray;
+    font-weight: normal;
+  }
+
+  .bar {
+    position: relative;
+    display: block;
+    width: 100%;
+  }
+  .bar:before,
+  .bar:after {
+    content: "";
+    height: 2px;
+    width: 0;
+    bottom: 1px;
+    top: -1px;
+    position: absolute;
+    background: $color-gray;
+
+    @include transition;
+  }
+  .bar:before {
+    left: 50%;
+  }
+  .bar:after {
+    right: 50%;
+    
+  }
+
+  input:focus ~ .bar:before,
+  input:focus ~ .bar:after {
+    width: 50%;
+  }
+}

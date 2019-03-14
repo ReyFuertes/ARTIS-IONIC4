@@ -1,0 +1,21 @@
+<app-header (click)="onClose()" [title]="'Select College'"></app-header>
+
+<ion-content>
+  <ion-row>
+    <ion-col>
+      <ion-searchbar [(ngModel)]="searchQuery" debounce="750" (ionInput)="onSearch($event)" ></ion-searchbar>
+    </ion-col>
+  </ion-row>
+
+  <ion-row *ngIf="showLoading" padding-top>
+    <ion-col text-center>
+      <i class="fas fa-spinner fa-pulse fa-2x"></i>
+    </ion-col>
+  </ion-row>
+
+  <ion-list>
+    <ion-item button *ngFor="let option of options" (click)="onSelect(option)">
+      {{ option.name }}
+    </ion-item>
+  </ion-list>
+</ion-content>

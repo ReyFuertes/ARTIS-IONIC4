@@ -1,0 +1,46 @@
+@mixin btn {
+  width: 100%;
+  height: 40px;
+  border-radius: 3px;
+  font-size: 18px;
+  font-weight: 100;
+
+  &:disabled {
+    opacity: 0.7;
+    color: #fff;
+    background-color: #003e52;
+  }
+
+  &:focus:not(:disabled), &:hover:not(:disabled) {
+    outline: 0;
+    box-shadow: none;
+    opacity: 0.8;
+  }
+
+}
+
+@mixin btn-primary {
+  @include btn;
+
+  color: #ffffff;
+  background-color: #fe5000;
+  padding-bottom: 4px;
+}
+
+@mixin btn-transparent {
+  @include btn;
+
+  color: $color-secondary;
+  background-color: transparent;
+  padding-bottom: 4px;
+  border: thin $color-standard solid;
+}
+
+@mixin btn-secondary {
+  @include btn;
+
+  color: $color-white;
+  background-color: $color-secondary;
+  padding-bottom: 4px;
+  border: thin $color-secondary solid;
+}

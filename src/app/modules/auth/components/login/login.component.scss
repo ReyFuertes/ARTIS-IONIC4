@@ -1,0 +1,62 @@
+@import "../../../../../theme/shared";
+
+:host {
+  ion-grid {
+    padding: 40px;
+
+    ion-list {
+      background: transparent;
+    }
+  }
+
+  ion-card-header {
+    padding-bottom: 0;
+  }
+
+  ion-item {
+    ion-label {
+      color: var(--ion-color-light);
+    }
+  }
+
+  .sign-up {
+    color: $color-gray-light;
+    cursor: pointer;
+  }
+
+  .btn-login {
+    @include btn-primary;
+  }
+  .btn-login:disabled{
+    background-color: #fe5000;
+  }
+
+  .login-logo {
+    @include logo-reverse;
+
+    margin: 0 auto;
+    margin-bottom: 20px;
+    position: relative;
+    left: 20px;
+  }
+
+  .floating-label {
+    input,
+    label {
+      color: $color-white;
+    }
+
+    input:focus ~ label, input:valid ~ label, input.ng-dirty ~ label {
+      color: $color-gray !important;
+    }
+  }
+
+  .forgot-password {
+    color: $color-gray-light;
+    cursor: pointer;
+
+    span {
+      font-family: $font-family-standard;
+    }
+  }
+}

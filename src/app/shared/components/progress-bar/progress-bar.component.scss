@@ -1,0 +1,22 @@
+@import '../../../../theme/shared';
+
+:host ::ng-deep .ui-progressbar {
+  height: 15px;
+}
+
+:host ::ng-deep .ui-progressbar .ui-progressbar-label {
+  line-height: 15px;
+}
+
+:host ::ng-deep .ui-progressbar .ui-progressbar-label {
+  color:#fff;
+}
+
+:host ::ng-deep .ui-progressbar .ui-progressbar-value {
+  background: #ff5000;
+}
+
+
+:host ::ng-deep .progress-label-black .ui-progressbar .ui-progressbar-label {
+  color: $color-secondary !important;
+}

@@ -1,0 +1,40 @@
+<app-header (click)="prev()" routerDirection="backward"></app-header>
+<ion-content *ngIf="currentSurveyAttr">
+  <ion-grid>
+    <ion-row>
+      <ion-col text-center>
+        <app-logo [path]="currentSurveyAttr.logo"></app-logo>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col text-center>
+        <app-progress-bar [value]="value"></app-progress-bar>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col text-center>
+        <h4 [innerHTML]="currentSurveyAttr.headline"></h4>
+        <p [innerHTML]="currentSurveyAttr.description"></p>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <div class="floating-label group mb-0">
+          <input readonly [(ngModel)]="selectedOption" name="college" (click)="presentOptions()" placeholder="College" type="text" autocomplete="off"
+            tabindex="2" required>
+          <span class="highlight"></span>
+        </div>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <button type="button" [disabled]="!selectedOption" class="btn-continue" (click)="updateSurveyInfo()">
+          CONTINUE
+        </button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

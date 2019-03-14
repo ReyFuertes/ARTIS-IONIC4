@@ -1,0 +1,108 @@
+[
+  {
+    "index": 0,
+    "logo": "/assets/images/signup/0.png",
+    "route": "/sign-up",
+    "description": ""
+  },
+  {
+    "index": 1,
+    "logo": "/assets/images/signup/1.png",
+    "route": "/survey-one",
+    "prevIndex": 0,
+    "nextIndex": 2,
+    "headline": "Before we get started, are you a..?",
+    "description": ""
+  },
+  {
+    "index": 2,
+    "logo": "/assets/images/signup/1.png",
+    "route": "/survey-two",
+    "prevIndex": 1,
+    "nextIndex": 3,
+    "headline": "What is your name?",
+    "description": ""
+  },
+  {
+    "index": 3,
+    "logo": "/assets/images/signup/4.png",
+    "route": "/survey-three",
+    "prevIndex": 2,
+    "nextIndex": 4,
+    "headline": "What are you interested in studying in college",
+    "description": "Pick on even if unsure, This allows us to provide ideas to create an application theme:"
+  },
+  {
+    "index": 4,
+    "logo": "/assets/images/signup/5.png",
+    "route": "/survey-four",
+    "prevIndex": 3,
+    "nextIndex": 5,
+    "headline": "When does your current school year begin?",
+    "description": ""
+  },
+  {
+    "index": 5,
+    "logo": "/assets/images/signup/6.png",
+    "route": "/survey-five",
+    "prevIndex": 4,
+    "nextIndex": 6,
+    "headline": "Do you take or plan to take advance classes?",
+    "description": "i.e AP, IB, Honors, accelerated, ect."
+  },
+  {
+    "index": 6,
+    "logo": "/assets/images/signup/7.png",
+    "route": "/survey-six",
+    "prevIndex": 5,
+    "nextIndex": 7,
+    "headline": "Are you fluent in a foreign language?",
+    "description": "We can recommend certain foreign language college entrance exams"
+  },
+  {
+    "index": 7,
+    "logo": "/assets/images/signup/12.png",
+    "route": "/survey-seven",
+    "prevIndex": 6,
+    "nextIndex": 8,
+    "headline": "Do you participate music?",
+    "description": "Colleges value musical accomplishments."
+  },
+  {
+    "index": 8,
+    "logo": "/assets/images/signup/14.png",
+    "route": "/survey-eight",
+    "prevIndex": 7,
+    "nextIndex": 9,
+    "headline": "Do you participate in the arts?",
+    "description": "This includes film, painting, etc."
+  },
+  {
+    "index": 9,
+    "logo": "/assets/images/signup/16.png",
+    "route": "/survey-nine",
+    "prevIndex": 8,
+    "nextIndex": 10,
+    "headline": "Where would you like to go to college?",
+    "description": "Pick one of the following to start."
+  },
+  {
+    "index": 10,
+    "logo": "/assets/images/signup/0.png",
+    "route": "/thank-you",
+    "prevIndex": 9,
+    "nextIndex": 11,
+    "headline": "Artis",
+    "description": "Thank you for completing the Artis assessent. Your path to college admissions success will start soon. \n    Please allow 5-10minutes for us to create your personal plan. You will receive a push notification with your introduction. \n    Weekly advice will then be send on Mondays"
+  },
+  {
+    "index": 11,
+    "logo": "/assets/images/signup/0.png",
+    "route": "/create-personal-plan",
+    "prevIndex": 10,
+    "nextIndex": 0,
+    "headline": "Creating Personal Plan..",
+    "description": "Please wait while we create your personal admissions plan (up to 30 seconds)"
+
+  }
+]

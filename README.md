@@ -1,0 +1,1 @@
+# Artis App  [![build status](https://gitlab.com/artisdev/artis-app/badges/dev/build.svg)](https://gitlab.com/artisdev/artis-app/commits/dev) 

@@ -1,0 +1,50 @@
+<app-header (click)="prev()" routerDirection="backward"></app-header>
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col text-center>
+        <app-logo [path]="currentSurveyAttr.logo"></app-logo>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col text-center>
+        <app-progress-bar [value]="value"></app-progress-bar>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col text-center>
+        <h4 [innerHTML]="currentSurveyAttr.headline"></h4>
+        <p [innerHTML]="currentSurveyAttr.description"></p>
+      </ion-col>
+    </ion-row>
+
+    <ion-row *ngIf="selectedOption">
+        <ion-col text-center>
+          <input type="text" text-center readonly class="form-control" [value]="selectedOption" />
+        </ion-col>
+      </ion-row>
+  
+      <ion-row *ngIf="selectedOption">
+        <ion-col>
+          <button type="button" class="col-5 btn-continue float-right" (click)="updateSurveyInfo()">
+            Next
+          </button>
+          <button type="button" class="col-5 btn-continue float-left" (click)="onCancel()">
+            Cancel
+          </button>
+        </ion-col>
+      </ion-row>
+  
+      <ion-row *ngIf="!selectedOption">
+        <ion-col>
+          <button type="button" class="col-5 btn-continue float-right" (click)="presentOptions()">
+            Yes
+          </button>
+          <button type="button" class="col-5 btn-continue float-left" (click)="updateSurveyInfo()">
+            No
+          </button>
+        </ion-col>
+      </ion-row>
+  </ion-grid>
+</ion-content>

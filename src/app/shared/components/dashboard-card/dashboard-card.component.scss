@@ -1,0 +1,41 @@
+@import "../../../../theme/shared";
+
+:host {
+  .card-container {
+    @include dash-card;
+    margin: 70px 20px 20px;
+    
+    .logo {
+      text-align: center;
+      position: relative;
+      top: -30px;
+      height: 65px;
+      width: 70px;
+      background: #fff;
+      border-radius: 50%;
+      margin: 0 auto;
+    }
+
+    .content {
+      position: relative;
+      top: -30px;
+
+      h2 {
+        text-align: center;
+      }
+
+      .bar {
+        width: 100px;
+        margin: 0 auto;
+        border-bottom: 3px $color-primary solid;
+      }
+
+      .description {
+        text-align: center;
+        padding: 10px;
+      }
+    }
+  }
+}
+
+

@@ -1,0 +1,34 @@
+{
+  "recommendations" : {
+    "0000000" : {
+      "content" : "The college application process is the first of many steps on the path to long-term success.  You should pursue what you are passionate about—academically and outside of class.  Find out what you love to do and study, and pursue those things.  Excelling in them will empower you to succeed in what matters to you.  This process is much easier when it is spent dedicated to the things that matter to you.  The goal is to create an application that shines with interests and passions in twelfth grade, and to use those interests and passions for the rest of  your  life.",
+      "schedulePeg" : "CalendarYear",
+      "type" : "TIPS"
+    },
+    "0000001" : {
+      "content" : "Classroom knowledge only goes so far when it comes to developing a career path.  [Click here.](http://nhsjs.com/) for relevant articles related to psychology studies.",
+      "s" : "CalendarYear",
+      "type" : "REMINDERS"
+    },
+    "0000002" : {
+      "content" : "The college you have enrolled at will require the last set of grades from 12th grade.  Be sure to comply with official transcript submission requirements by the stated deadline.  ",
+      "s" : "CalendarYear",
+      "type" : "ACADEMICS"
+    },
+    "0000003" : {
+      "content" : "Wishing you success in college and beyond.  Remember the passions, skills, and interests used to stand out in the college admission process make college students stand out when it comes to applying for jobs or grad school.  Stay true to those passions and excel in what matters.",
+      "s" : "CalendarYear",
+      "type" : "TIPS"
+    },
+    "0000004" : {
+      "content" : "If on a waitlist, decide ASAP whether you will attend the waitlist college or commit to the college you enrolled to attend.  The fall term is starting soon.",
+      "s" : "CalendarYear",
+      "type" : "WAIT_LIST"
+    },
+    "0000005" : {
+      "content" : "Learn about what you love.  [Click here.](http://nhsjs.com/) for the latest developments.",
+      "s" : "CalendarYear",
+      "type" : "LEARN_MORE"
+    }
+  }
+}

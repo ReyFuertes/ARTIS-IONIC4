@@ -1,0 +1,7 @@
+<app-top-nav [title]="'Dashboard'"></app-top-nav>
+<ion-content class="dashboard-bg">
+  <app-header-card></app-header-card>
+  <div *ngFor="let recommendation of recommendations">
+    <app-dashboard-card [recommendation]="recommendation"></app-dashboard-card>
+  </div>
+</ion-content>

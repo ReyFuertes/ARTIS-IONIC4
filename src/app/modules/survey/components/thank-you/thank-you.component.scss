@@ -1,0 +1,31 @@
+
+@import '../../../../../theme/shared';
+
+:host {
+
+  .survey-logo {
+    @include logo-horizontal;
+
+    margin: 0 auto;
+  }
+
+  h4 {
+    margin: 0;
+  }
+
+  p {
+    font-size: 14px;
+    text-align:  center;
+  }
+
+  ion-grid {
+    padding: 20px;
+  }
+
+  .btn-get-started {
+    @include btn-secondary;
+
+    margin-top: 20px;
+  }
+
+}

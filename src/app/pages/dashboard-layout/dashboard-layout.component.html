@@ -1,0 +1,17 @@
+<ion-app>
+  <ion-split-pane >
+    <ion-menu-button></ion-menu-button>
+    <ion-menu>
+      <ion-header>
+        <ion-toolbar color="blue" text-center>
+          <img src="../../../assets/images/logo-text.png"  />
+        </ion-toolbar>
+      </ion-header>
+      <ion-content class="bgblue">
+        <app-sidebar></app-sidebar>
+      </ion-content>
+    </ion-menu>
+
+    <ion-router-outlet class="dashboard-bg" main></ion-router-outlet>
+  </ion-split-pane>
+</ion-app>

@@ -1,0 +1,143 @@
+<app-header (click)="gotoDashboard()" [title]="title" routerDirection="backward"></app-header>
+
+<ion-content>
+  <ion-list>
+    <ion-list-header padding-top>Background Info</ion-list-header>
+    <ion-grid margin class="bb">
+      <ion-row>
+        <ion-col padding-top><label>Type</label></ion-col>
+        <ion-col>
+          <ion-select [(ngModel)]="person">
+            <ion-select-option value="Student">Student</ion-select-option>
+            <ion-select-option value="Parent">Parent</ion-select-option>
+          </ion-select>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col padding-top bb>
+          <label>Student Name</label>
+          <input type="text" class="form-control" [(ngModel)]="studentName" />
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col padding-top>Home Language</ion-col>
+        <ion-col>
+          <ion-select [(ngModel)]="language">
+            <ion-select-option value="English">English</ion-select-option>
+            <ion-select-option value="Chinese">Chinese</ion-select-option>
+          </ion-select>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+    <ion-list-header padding-top>Academic Info</ion-list-header>
+    <ion-grid margin class="bb">
+      <ion-row>
+        <ion-col padding-top>Grade</ion-col>
+        <ion-col>
+          <ion-select [(ngModel)]="grade">
+            <ion-select-option value="11th Grade">11th Grade</ion-select-option>
+            <ion-select-option value="10th Grade">10th Grade</ion-select-option>
+          </ion-select>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col padding-top>School Year Start</ion-col>
+        <ion-col>
+          <ion-select [(ngModel)]="sy">
+            <ion-select-option value="Early August">Early August</ion-select-option>
+            <ion-select-option value="Early July">Early July</ion-select-option>
+          </ion-select>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col padding-top>Advance Classes</ion-col>
+        <ion-col>
+          <ion-toggle [(ngModel)]="hasAdvanceClasses" checked="true" float-right></ion-toggle>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col padding-top>Foreign Language</ion-col>
+        <ion-col>
+          <ion-select [(ngModel)]="foreignLang">
+            <ion-select-option value="Not Selected">Not Selected</ion-select-option>
+            <ion-select-option value="Other">Other</ion-select-option>
+          </ion-select>
+        </ion-col>
+      </ion-row>
+
+    </ion-grid>
+
+    <ion-list-header padding-top>Extracurricular Activities</ion-list-header>
+    <ion-grid class="bb">
+      <ion-row>
+        <ion-col padding-top>Sport</ion-col>
+        <ion-col>
+          <ion-select [(ngModel)]="sport">
+            <ion-select-option value="Archery">Archery</ion-select-option>
+            <ion-select-option value="Basketball">Basketball</ion-select-option>
+          </ion-select>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col padding-top>Music</ion-col>
+        <ion-col>
+          <ion-select [(ngModel)]="music">
+            <ion-select-option value="Chenda">Chenda</ion-select-option>
+            <ion-select-option value="Pop">Pop</ion-select-option>
+          </ion-select>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col padding-top>Art</ion-col>
+        <ion-col>
+          <ion-select [(ngModel)]="art">
+            <ion-select-option value="Drawing">Drawing</ion-select-option>
+            <ion-select-option value="Stencil">Stencil</ion-select-option>
+          </ion-select>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+    <ion-list-header padding-top>College Goals</ion-list-header>
+    <ion-grid>
+      <ion-row>
+        <ion-col padding-top>Interest</ion-col>
+        <ion-col>
+          <ion-select [(ngModel)]="interest">
+            <ion-select-option value="Engineering">Engineering</ion-select-option>
+            <ion-select-option value="Accounting">Accounting</ion-select-option>
+          </ion-select>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col padding-top>Dream College</ion-col>
+        <ion-col>
+          <ion-select [(ngModel)]="dreamCollege">
+            <ion-select-option value="Boston College">Boston College</ion-select-option>
+            <ion-select-option value="Other Colleges">Other Colleges</ion-select-option>
+          </ion-select>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+    <ion-list-header padding-top>App Settings</ion-list-header>
+    <ion-grid class="bb">
+      <ion-row>
+        <ion-col padding-top>Parent SMS No.</ion-col>
+        <ion-col>
+          <input type="text" class="form-control" [(ngModel)]="parentSMSNumber" />
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+  </ion-list>
+</ion-content>

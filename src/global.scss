@@ -1,0 +1,77 @@
+// http://ionicframework.com/docs/theming/
+@import '~@ionic/angular/css/core.css';
+@import '~@ionic/angular/css/normalize.css';
+@import '~@ionic/angular/css/structure.css';
+@import '~@ionic/angular/css/typography.css';
+
+@import '~@ionic/angular/css/padding.css';
+@import '~@ionic/angular/css/float-elements.css';
+@import '~@ionic/angular/css/text-alignment.css';
+@import '~@ionic/angular/css/text-transformation.css';
+@import '~@ionic/angular/css/flex-utils.css';
+
+@import './theme/shared';
+
+@font-face {
+  font-family: 'Korolev';
+  font-weight: bold;
+  src: url('./assets/fonts/Korolev-Bold.otf') format('otf');
+}
+
+@font-face {
+  font-family: 'Montserrat-Bold';
+  font-weight: bold;
+  src: url('./assets/fonts/Montserrat-Bold.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'Montserrat-Light';
+  font-weight: bold;
+  src: url('./assets/fonts/Montserrat-Light.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'Montserrat-Regular';
+  font-weight: bold;
+  src: url('./assets/fonts/Montserrat-Regular.ttf') format('ttf');
+}
+
+body {
+  color: $color-standard;
+  font-family: $font-family-standard;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $color-standard;
+}
+
+.floating-label {
+  @include floating-label;
+}
+
+input {
+  @include input;
+}
+
+
+.nb {
+  border: none !important;
+}
+
+ion-content.dashboard-bg {
+  --background: url('/assets/images/bg/dashboard-bg.jpg');
+}
+
+ion-content.auth-bg {
+  --background: url('/assets/images/bg/auth-bg.jpg');
+}
+
+/* quick fix for ionic4 */
+ion-modal {
+  display: block !important;
+}

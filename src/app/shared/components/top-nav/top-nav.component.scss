@@ -1,0 +1,17 @@
+@import '../../../../theme/shared';
+
+
+:host {
+  i {
+    font-size: 22px;
+    margin: 0 17px;
+    color: $color-standard;
+  }
+
+  img {
+    height: 35px;
+  }
+  .menu-btn{
+    color: #003d4d;
+  }
+}

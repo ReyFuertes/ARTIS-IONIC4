@@ -1,0 +1,18 @@
+@import "../../../../../theme/shared";
+
+
+ion-grid {
+  margin: 0 10px;
+}
+
+.bb {
+    border-bottom: thin $color-gray-lighter solid;
+}
+
+ion-list-header {
+  color: $color-primary;
+}
+
+app-header {
+  border-bottom: thin $color-gray-lighter solid;
+}

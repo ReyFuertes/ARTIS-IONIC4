@@ -1,0 +1,33 @@
+# Gitlab CI - Build Ionic 3 Project and generates apk files
+image: node:latest
+
+stages:
+  - build
+  # - deploy
+
+before_script:
+- apt-get update -qq && apt-get install -y -qq sshpass
+
+Copy_to_Server:
+  stage: build
+  script:
+    - ls
+    - sshpass -V
+    - export SSHPASS=$USER_PASS
+    - sshpass -e scp -o stricthostkeychecking=no -r . artisdev-deploy@159.65.157.108:/home/artis/dev
+Build_Artifacts:
+  only:
+   - master
+  stage: build
+  image: beevelop/ionic:latest
+  script:
+    - ls
+    - npm ci
+    - ionic build --prod
+    - ionic cordova platform rm android
+    - ionic cordova platform add android
+    - ionic cordova build android
+    - ls ./platforms/android/app/build/outputs/apk/debug/app-debug.apk
+  artifacts:
+    paths:
+      - platforms/android/app/build/outputs/apk/debug

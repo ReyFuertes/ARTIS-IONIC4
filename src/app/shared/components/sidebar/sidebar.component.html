@@ -1,0 +1,14 @@
+<ion-list class="sidebar">
+  <ion-menu-toggle *ngFor="let menu of menus">
+    <ion-item (click)="navigate(menu.route)">
+      <i [class]="menu.icon"></i>
+      <ion-label> {{ menu.text }} </ion-label>
+    </ion-item>
+  </ion-menu-toggle>
+  <ion-menu-toggle>
+    <ion-item button (click)="onLogout()">
+      <i class="fas fa-lock"></i>
+      <ion-label>Logout</ion-label>
+    </ion-item>
+  </ion-menu-toggle>
+</ion-list>

@@ -1,0 +1,15 @@
+@mixin logo-reverse {
+  background-image: url("/assets/images/logo-reverse.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 160px;
+  width: 150px;
+}
+
+@mixin logo-horizontal {
+  background-image: url("/assets/images/logo-horizontal.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 75px;
+  width: 150px;
+}

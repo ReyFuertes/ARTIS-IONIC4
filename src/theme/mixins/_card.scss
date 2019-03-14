@@ -1,0 +1,5 @@
+@mixin dash-card {
+  box-shadow: $box-shadow;
+  background: $color-gray-lighter;
+  border-radius: 2px;
+}
